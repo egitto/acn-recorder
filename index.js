@@ -2,13 +2,17 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 const now = require('moment')
 const _ = require('lodash')
-const pwd = require('process').argv[1].replace(/\/[^/]*$/, '')
 fs = require('fs')
-var token = fs.readFileSync('token')
 
 var serversToLog = { '345045447745732608': 'ACN' }
+const pwd = require('process').argv[1].replace(/\/[^/]*$/, '')
+var token = fs.readFileSync('token')
 
-client.login('' + token).catch(err => {console.log('login_error'); throw err})
+client.login('' + token)
+  .catch(err => {
+    console.log(`login_error. check your token at '${pwd}/token'`)
+    throw err
+  })
 console.log('loading')
 client.on('ready', () => console.log('Ready!'))
 client.on('message', message => {
