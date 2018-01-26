@@ -1,0 +1,13 @@
+{
+  "name": "acn-recorder",
+  "version": "1.0.0",
+  "main": "record.sh",
+  "repository": "https://github.com/egitto/acn-recorder",
+  "author": "egitto <acn.recorder@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1"
+  }
+}
