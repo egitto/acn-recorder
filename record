@@ -1,0 +1,3 @@
+#!/bin/sh
+LOG=logs/runlog.txt
+while true; do date >> $LOG; node index.js 1>> $LOG 2>> $LOG; sleep 30; done
