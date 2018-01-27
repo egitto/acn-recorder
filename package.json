@@ -9,5 +9,9 @@
     "discord.js": "^11.3.0",
     "lodash": "^4.17.4",
     "moment": "^2.20.1"
+  },
+  "scripts": {
+    "install": "mv token_template token && echo renamed token_template to token; edit token before running `npm start` || true",
+    "start": "node index.js"
   }
 }

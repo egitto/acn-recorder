@@ -1,0 +1,1 @@
+In the discord app, open your Inspector (Ctrl+Shift+i), go into Application > Storage > Local Storage > https://discordapp.com > token. Copy-paste that token (your user token, used for authenticating access) into THIS FILE, without the quotes, overwriting everything.
